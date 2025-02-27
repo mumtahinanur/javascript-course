@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <button onclick="
+      chooseMove('heads');
+    ">heads</button>
+
+    <button onclick="
+      chooseMove('tails');
+    " class="tails-button">tails</button>
+    
+    <p>You choose:</p>
+
+    <script>
+      function chooseMove(move) {
+        document.querySelector('p').innerHTML = `You choose: ${move}`;
+      }
+    </script>
+  </body>
+</html>
