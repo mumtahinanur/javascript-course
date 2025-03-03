@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11l</title>
+  </head>
+  <body>
+    <script>
+      function minMax(nums) {
+        const result = {
+          min : null,
+          max : null
+        };
+
+        for ( let i = 0; i < nums.length; i++) {
+          if (result.min === null || nums[i] < result.min) {
+            result.min = nums[i];
+          }
+
+          if( result.max === null || nums[i] > result.max) {
+            result.max = nums[i];
+          }
+        }
+        return result;
+      }
+
+      console.log(minMax([3]));
+    </script>
+  </body>
+</html>

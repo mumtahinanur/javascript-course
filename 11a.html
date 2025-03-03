@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11a</title>
+  </head>
+  <body>
+    <script>
+      let arr = ['hi', 'hello', 'good'];
+
+      console.log(arraySwap(arr));
+      
+      function getLastValue(ara) {
+        return ara[ara.length-1];
+      }
+
+      function arraySwap(array) {
+        let temp = 0;
+        temp = array[0];
+        array[0] = array[array.length-1];
+        array[array.length-1] = temp;
+        return array;
+      }
+    </script>
+  </body>
+</html>

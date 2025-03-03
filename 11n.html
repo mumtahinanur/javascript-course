@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11</title>
+  </head>
+  <body>
+    <script>
+      function countWords(words) {
+        const result = {};
+
+        for (let i = 0; i < words.length; i++) {
+          const word = words[i];
+
+          if (!result[word]) {
+            result[word] = 1;
+          }
+          else {
+            result[word]++;
+          }
+        }
+        return result;
+      }
+
+      const ara = ['hello', 'world', 'search', 'search'];
+
+      let index = -1;
+
+      for(let i = 0; i < ara.length; i++) {
+        if(ara[i] === 'search') {
+          index = i;
+          break;
+        }
+      }
+
+      console.log(index);
+
+      //console.log(countWords(['apple', 'grape', 'apple']));
+    </script>
+  </body>
+</html>
