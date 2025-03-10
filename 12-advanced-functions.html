@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Functions</title>
+  </head>
+  <body>
+    <script>
+      /*
+      const function1 = function() {
+        console.log('hello');
+      };
+
+      console.log(function1);
+      console.log(typeof function1);
+      function1();
+
+      const object1 = {
+        num: 2,
+        fun: function() {
+          console.log('hi');
+        }
+      };
+      object1.fun();
+
+      function run(param) {
+        param();
+      }
+      run(function() {
+        console.log('hi, hello');
+      });
+      */
+
+      setTimeout(function() {
+        console.log('timeout');
+        console.log('timeout2');
+      }, 3000);
+
+      console.log('next line');
+
+      setInterval(function() {
+        console.log('interval');
+      }, 3000);
+
+      console.log('next line 2');
+    </script>
+  </body>
+</html>
