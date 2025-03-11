@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Functions</title>
+  </head>
+  <body>
+    <button class="js-button" onclick="
+      updateFunction();
+    ">Start</button>
+
+    <script>
+      function updateFunction() {
+        document.querySelector('.js-button').innerHTML = 'Loading...';
+
+        setTimeout(function() {
+          document.querySelector('.js-button').innerHTML = 'Finished';
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Functions</title>
+  </head>
+  <body>
+    <button class="js-button" onclick="
+      updateFunction();
+    ">Add to cart</button>
+
+    <p class="message"></p>
+
+    <script>
+      let timeOutId;
+      
+      function updateFunction() {
+        document.querySelector('.message').innerHTML = 'Added';
+
+        clearTimeout(timeOutId);
+
+        timeOutId = setTimeout(function() {
+          document.querySelector('.message').innerHTML = '';
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>
