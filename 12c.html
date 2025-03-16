@@ -4,18 +4,17 @@
     <title>Advanced Functions</title>
   </head>
   <body>
-    <button class="js-button" onclick="
-      updateFunction();
-    ">Start</button>
+    <button class="js-button">Start</button>
 
     <script>
-      function updateFunction() {
-        document.querySelector('.js-button').innerHTML = 'Loading...';
+      document.querySelector('.js-button')
+        .addEventListener('click', () => {
+          document.querySelector('.js-button').innerHTML = 'Loading...';
 
-        setTimeout(function() {
-          document.querySelector('.js-button').innerHTML = 'Finished';
-        }, 1000);
-      }
+          setTimeout(() => {
+            document.querySelector('.js-button').innerHTML = 'Finished';
+          }, 1000);
+      }); 
     </script>
   </body>
 </html>
